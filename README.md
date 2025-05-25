@@ -86,7 +86,7 @@
 ## ☁️ Hébergement / DevOps
 
 ### Plateformes recommandées :
-- **Front-end** : Vercel ou Netlify
+- **Front-end** : Vercel ou **Netlify**
 - **Back-end** : Render, Railway, ou DigitalOcean App Platform
 - **Déploiement personnalisé** : Docker avec CI/CD
 
