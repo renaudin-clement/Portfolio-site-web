@@ -18,5 +18,8 @@
   "homepage": "https://github.com/renaudin-clement/site-web#readme",
   "dependencies": {
     "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "vite": "^7.1.5"
   }
 }
