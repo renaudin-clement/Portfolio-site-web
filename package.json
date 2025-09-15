@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/renaudin-clement/site-web/issues"
   },
-  "homepage": "https://github.com/renaudin-clement/site-web#readme"
+  "homepage": "https://github.com/renaudin-clement/site-web#readme",
+  "dependencies": {
+    "three": "^0.180.0"
+  }
 }
