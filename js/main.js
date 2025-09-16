@@ -15,13 +15,13 @@ const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
 const cube = new THREE.Mesh( geometry, material );
 scene.add( cube );
 
-camera.position.z = 5;
-
+camera.position.z = 10;
+camera.position.x = 1;
 
 function animate() {
   renderer.render( scene, camera );
+  cube.rotation.x += 0.01;
+  cube.rotation.y += 0.01;
 }
 renderer.setAnimationLoop( animate );
 
-cube.rotation.x += 0.01;
-cube.rotation.y += 0.01;
