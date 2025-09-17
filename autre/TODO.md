@@ -1,5 +1,11 @@
 # 📝 TODO - Suivi des tâches
 
+- [ ] mise en place du utils
+- [ ] Creation d'un routeur single page
+- [ ] faire fonctionner threejs
+- [ ] creation des fonction pour controler cameras
+
+
 ## 🔐 Sécurité
 
 - [ ] Configurer Helmet.js sur le back-end
