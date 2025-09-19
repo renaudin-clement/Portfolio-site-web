@@ -22,7 +22,7 @@ cube.position.y =7;
 
 const loader = new GLTFLoader();
 
-loader.load( '../../models/scene.gltf', function ( gltf ) {
+loader.load( '/models/scene.gltf', function ( gltf ) {
 
   scene.add( gltf.scene );
 
