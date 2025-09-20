@@ -17,7 +17,7 @@ const cube = new THREE.Mesh( geometry, material );
 scene.add( cube );
 
 camera.position.z = 10;
-camera.position.y = 3;
+camera.position.y = 3.6;
 cube.position.y =7;
 
 const loader = new GLTFLoader();
@@ -34,7 +34,7 @@ loader.load( '/models/scene.gltf', function ( gltf ) {
 
 function animate() {
   renderer.render( scene, camera );
-  scene.rotation.y += 0.01;
+  scene.rotation.y -= 0.01;
 
   cube.rotation.x += 0.01;
   cube.rotation.y += 0.01;
