@@ -42,3 +42,21 @@ body {
     height: 3px;
     background-color: white;
 }
+
+
+/* me */
+
+.footer_section {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+  background-color: #c5c5c5;
+  color: #000000;
+}
+
+ul{
+list-style: none;
+margin-left: 0;
+padding-left: 0;
+
+}
