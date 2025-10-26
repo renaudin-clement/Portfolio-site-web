@@ -1,0 +1,28 @@
+.conteneur_projet{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.projet{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: beige;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    width: 100%;
+    text-align: center;
+}
+
+image{
+    width: 100%;
+    text-align: center;
+}
+
+p{
+    width: 100%;
+    text-align: center;
+}
