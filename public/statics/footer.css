@@ -1,4 +1,10 @@
-.footer_section {
+footer{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer_section_ul {
+  width: 100%;
   display: flex;
   justify-content: space-around;
   padding: 5px;
@@ -12,3 +18,21 @@ margin-left: 0;
 padding-left: 0;
 
 }
+
+.footer_section_ul_link{
+  display: flex;
+  justify-content: start;
+}
+
+.footer_section2{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+    
+.footer_section2 > * ,.footer_section2 > * > li{
+padding: 5px;
+margin: 5px;
+}
+      
