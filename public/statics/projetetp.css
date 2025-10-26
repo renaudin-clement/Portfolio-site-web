@@ -10,6 +10,7 @@
     background-color: beige;
     justify-content: center;
     align-items: center;
+    margin:1em;
 }
 
 h2{
@@ -22,7 +23,7 @@ image{
     text-align: center;
 }
 
-p{
+.projet > p{
     width: 100%;
     text-align: center;
 }
