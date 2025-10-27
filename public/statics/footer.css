@@ -18,6 +18,8 @@ a{
     text-decoration: none;
     color: white;
     transition: color 0.3s;
+    align-content: center;
+    
 }
 
 ul{
@@ -25,6 +27,10 @@ list-style: none;
 margin-left: 0;
 padding-left: 0;
 
+}
+
+.footer_section_ul > li{
+  display: flex;
 }
 
 .footer_section_ul_link{

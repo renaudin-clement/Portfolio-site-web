@@ -44,3 +44,29 @@ input[type=submit] {
   width: 150px;
   padding: 10px;
 }
+
+.contact_perso{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 1em;
+  padding-left: 25%;
+}
+
+.contact_perso > img{
+
+}
+
+.contact_section{
+  display: flex;
+  align-items: center;
+}
+
+.contact_section > *{
+  width: 50%;
+}
+
+
+h3{
+  margin: 0;
+}
