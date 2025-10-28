@@ -53,6 +53,8 @@ input[type=submit] {
   padding-left: 25%;
 }
 
+
+
 .contact_perso > div > img{
   padding: 1em;
 }
@@ -138,12 +140,24 @@ h3{
       padding-top: 1em;
     }
 
+    
+    .contact_perso > section > p{
+      padding-top: 1em;
+    }
+    
     .contact_persoV2 > section > p , .contact_persoV2 > section > a {
       width: 100%;  
     }
 
-    .contact_perso > section > p{
-      padding-top: 1em;
+    .contact_persoV2 > div{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      padding: 1em;
+    }
+
+    .contact_persoV2 > div > img{
+      width: 4em;
     }
 
 
