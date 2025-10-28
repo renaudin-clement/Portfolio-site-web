@@ -16,4 +16,26 @@
     .hamburger {
         display: flex;
     }
+
+
+    .conteneur_projet {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .projet {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: beige;
+        justify-content: center;
+        align-items: center;
+        margin: 1em;
+        width: 100%;
+    }
+
 }
+
+
+
+
