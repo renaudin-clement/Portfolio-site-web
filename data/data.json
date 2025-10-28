@@ -1,0 +1,57 @@
+{ 
+    
+
+
+"projets":[
+    {   "Université":
+            [{
+                    "billTo" : { 
+                        "name" : "John Smith",
+                        "address" : "123 Maple Street",
+                        "city" : "Pretendville",
+                        "state" : "NY",
+                        "zip"   : "12345" 
+                    },
+
+                    "billTo2" : { 
+                        "name" : "John Smith",
+                        "address" : "123 Maple Street",
+                        "city" : "Pretendville",
+                        "state" : "NY",
+                        "zip"   : "12345" 
+                    }
+            }],
+        
+        "Personnel":
+            [{
+                    "billTo": { 
+                        "name" : "John Smith",
+                        "address" : "123 Maple Street",
+                        "city" : "Pretendville",
+                        "state" : "NY",
+                        "zip"   : "12345" 
+                    },
+
+                    "billTo2" : { 
+                        "name" : "John Smith",
+                        "address" : "123 Maple Street",
+                        "city" : "Pretendville",
+                        "state" : "NY",
+                        "zip"   : "12345" 
+                    }
+            }]
+
+}
+
+    
+],
+
+
+
+"langages":[
+    {"nom":"Java", "icon":"public/img/Java_Logo.svg.png"},
+    {"nom":"JavaScript", "icon":"public/img/JavaScript-logo.png"},
+    {"nom":"PHP", "icon":"public/img/new-php-logo.png"}
+]
+
+}
