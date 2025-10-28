@@ -90,6 +90,8 @@ h3{
         align-items: center;
         justify-content: start;
 
+        padding: 0;
+        padding-left: 0;
     }
 
 }
