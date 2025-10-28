@@ -2,6 +2,8 @@ p {
   margin: 0px;
 }
  
+
+
 fieldset {
   margin-bottom: 15px;
   padding: 4em;
@@ -82,9 +84,7 @@ h3{
 }
 
 
-.contact_persoV2 > h3{
-  width: 100%;
-}
+
 
 .contact_persoV2 > section{
   padding: 1em;
@@ -92,10 +92,17 @@ h3{
 }
 
 
+h1{
+  text-align: center;
+}
+
+
+
+
 @media (max-width: 768px) {
 
     fieldset{
-      padding: 1em;
+      padding: 0.5em;
     }
 
     .contact_section{

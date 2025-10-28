@@ -17,4 +17,14 @@ main{
 
 footer{
     width: 100%;
+} 
+
+
+main > section > p{
+    text-align: justify;
+    padding: 1em;
+}
+
+main > h1{
+    text-align: center;
 }
