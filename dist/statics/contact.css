@@ -53,7 +53,7 @@ input[type=submit] {
   padding-left: 25%;
 }
 
-.contact_perso > img{
+.contact_perso > div > img{
   padding: 1em;
 }
 
@@ -82,16 +82,32 @@ h3{
 
     .contact_section > *{
         width: 100%;
+        padding: 1em;
     }
 
+    .contact_section > form{
+      display: flex;
+      justify-content: center;
+    }
 
     .contact_perso {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
-        justify-content: start;
+        justify-content: center;
 
         padding: 0;
         padding-left: 0;
     }
 
+    .contact_perso > div{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+
+    .contact_perso > div > img{
+      width: 4em;
+    }
 }
