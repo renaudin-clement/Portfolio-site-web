@@ -80,6 +80,11 @@ h3{
         flex-wrap: wrap;
     }
 
+    h3{
+      margin: 0;
+      text-align: center;
+    }
+
     .contact_section > *{
         width: 100%;
         padding: 1em;
@@ -110,4 +115,36 @@ h3{
     .contact_perso > div > img{
       width: 4em;
     }
+
+    .contact_persoV2 {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 1em;
+
+    }
+
+    .contact_persoV2 > h3{
+      width: 100%;  
+      text-align: center;
+    }
+
+    .contact_persoV2 > section{
+      width: 50%;  
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+      padding-top: 1em;
+    }
+
+    .contact_persoV2 > section > p , .contact_persoV2 > section > a {
+      width: 100%;  
+    }
+
+    .contact_perso > section > p{
+      padding-top: 1em;
+    }
+
+
 }
