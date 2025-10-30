@@ -14,10 +14,10 @@ const toggleMenu = () => {
     <nav class="navbar">
           <div class="logo">renaudinclement.fr</div>
             <ul class="nav-links" :class="{ active: isActive }">
-                <li>    <RouterLink to="/">Accueil</RouterLink>               </li>
-                <li>    <RouterLink to="/projet">Projet</RouterLink>          </li>
-                <li>    <RouterLink to="/portfolio">Portfolio</RouterLink>    </li>
-                <li>    <RouterLink to="/contat">Contact</RouterLink>         </li>
+                <RouterLink to="/"><li>          Accueil               </li></RouterLink>
+                <RouterLink to="/projet"><li>    Projet      </li></RouterLink>    
+                <RouterLink to="/portfolio"><li> Portfolio    </li></RouterLink>
+                <RouterLink to="/contat"><li>    Contact   </li></RouterLink>
             </ul>
           <div class="hamburger" @click="toggleMenu">
               <span></span>
@@ -73,7 +73,9 @@ const toggleMenu = () => {
 }
 
 
-
+li{
+    text-align: center;
+}
 
 @media (max-width: 768px) {
     .nav-links {
