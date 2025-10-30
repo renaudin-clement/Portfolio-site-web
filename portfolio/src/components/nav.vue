@@ -1,5 +1,11 @@
 <script setup>
+import { ref } from 'vue'
 
+const isActive = ref(false)
+
+const toggleMenu = () => {
+  isActive.value = !isActive.value
+}
 
 </script>
 
@@ -7,13 +13,13 @@
 
     <nav class="navbar">
           <div class="logo">renaudinclement.fr</div>
-            <ul class="nav-links">
+            <ul class="nav-links" :class="{ active: isActive }">
                 <li>    <RouterLink to="/">Accueil</RouterLink>               </li>
                 <li>    <RouterLink to="/projet">Projet</RouterLink>          </li>
                 <li>    <RouterLink to="/portfolio">Portfolio</RouterLink>    </li>
                 <li>    <RouterLink to="/contat">Contact</RouterLink>         </li>
             </ul>
-          <div class="hamburger">
+          <div class="hamburger" @click="toggleMenu">
               <span></span>
               <span></span>
               <span></span>
@@ -22,7 +28,7 @@
 
 </template>
 
-<style scoped>
+<style scoped >
 
 
 
@@ -65,6 +71,12 @@
     height: 3px;
     background-color: white;
 }
+
+
+
+
+
+
 
 
 </style>
