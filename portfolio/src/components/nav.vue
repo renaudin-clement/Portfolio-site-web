@@ -12,7 +12,7 @@ const toggleMenu = () => {
 <template>
 
     <nav class="navbar">
-          <div class="logo">renaudinclement.fr</div>
+           <RouterLink to="/"><div class="logo">renaudinclement.fr</div></RouterLink>
             <ul class="nav-links" :class="{ active: isActive }">
                 <RouterLink to="/"><li>          Accueil               </li></RouterLink>
                 <RouterLink to="/projet"><li>    Projet      </li></RouterLink>    
@@ -30,6 +30,10 @@ const toggleMenu = () => {
 
 <style scoped >
 
+.router-link-active{
+    text-decoration : none;
+    color:white;
+}
 
 
 .navbar {

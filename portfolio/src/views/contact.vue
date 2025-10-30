@@ -260,7 +260,7 @@ h1{
     }
 
     .contact_persoV2 > section{
-      width: 50%;  
+      width: 20%;  
       display: flex;
       flex-wrap: wrap;
       text-align: center;

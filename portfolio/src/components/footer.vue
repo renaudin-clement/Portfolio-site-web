@@ -87,4 +87,10 @@ padding: 5px;
 margin: 5px;
 }
       
+
+.router-link-active{
+    text-decoration : none;
+    color:white;
+}
+
 </style>

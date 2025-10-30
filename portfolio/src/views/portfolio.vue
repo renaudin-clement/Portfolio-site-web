@@ -147,4 +147,10 @@ image{
     
 
 }
+
+.router-link-active{
+    text-decoration : none;
+    color:white;
+}
+
 </style>
