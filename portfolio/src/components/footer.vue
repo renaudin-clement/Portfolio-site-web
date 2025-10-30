@@ -6,13 +6,12 @@
     
 <footer>
     <ul class="footer_section_ul">
-        <li><a href="/index.html">Accueil</a></li>
-        <li><a href="/templates/projet.html">Projet</a></li>
-        <li><a href="/templates/portfolio.html">Portfolio</a></li>
-        <li><a href="/templates/contact.html">Contact</a></li>
+        <li>    <RouterLink to="/">Accueil</RouterLink>               </li>
+        <li>    <RouterLink to="/projet">Projet</RouterLink>          </li>
+        <li>    <RouterLink to="/portfolio">Portfolio</RouterLink>    </li>
+        <li>    <RouterLink to="/contat">Contact</RouterLink>         </li>
     </ul>
-    <RouterLink to="/">Go to Home</RouterLink>
-    <RouterLink to="/">Go to Home</RouterLink>
+
     <section class="footer_section2">
 
         <p>&copy; 2025 renaudin-clement.</p>
@@ -36,4 +35,56 @@
 
 <style scoped>
 
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #333;
+  color: white;
+}
+
+.footer_section_ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+  background-color: #333;
+  color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+    align-content: center;
+    
+}
+
+ul{
+list-style: none;
+margin-left: 0;
+padding-left: 0;
+
+}
+
+.footer_section_ul > li{
+  display: flex;
+}
+
+.footer_section_ul_link{
+  display: flex;
+  justify-content: start;
+}
+
+.footer_section2{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+    
+.footer_section2 > * ,.footer_section2 > * > li{
+padding: 5px;
+margin: 5px;
+}
+      
 </style>

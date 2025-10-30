@@ -81,5 +81,34 @@
 
 
 <style scoped>
+.conteneur_projet{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
 
+.projet{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: beige;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    margin:1em;
+}
+
+h2{
+    width: 100%;
+    text-align: center;
+}
+
+image{
+    width: 100%;
+    text-align: center;
+}
+
+.projet > p{
+    width: 100%;
+    text-align: justify;
+}
 </style>

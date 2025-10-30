@@ -96,5 +96,197 @@
 
 
 <style scoped>
+p {
+  margin: 0px;
+}
+ 
 
+
+fieldset {
+  margin-bottom: 15px;
+  padding: 4em;
+  width: 1em;
+}
+ 
+legend {
+  padding: 0px 3px;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+ 
+label {
+  display: inline-block;
+  vertical-align: top;
+  margin: 6px;
+}
+ 
+em {
+  font-weight: bold;
+  font-style: normal;
+  color: #f00;
+}
+ 
+input:focus {
+  background: #eaeaea;
+}
+ 
+input, textarea {
+  width: 249px;
+}
+ 
+textarea {
+  height: 100px;
+}
+ 
+
+ 
+input[type=submit] {
+  width: 150px;
+  padding: 10px;
+}
+
+.contact_perso , .contact_persoV2{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 1em;
+  padding-left: 25%;
+}
+
+
+
+.contact_perso > div > img{
+  padding: 1em;
+}
+
+.contact_section{
+  display: flex;
+  align-items: center;
+}
+
+.contact_section > *{
+  width: 50%;
+}
+
+
+h3{
+  margin: 0;
+}
+
+
+
+
+.contact_persoV2 > div > img{
+  max-width: 40px;
+  padding: 1em;
+}
+
+
+
+
+.contact_persoV2 > section{
+  padding: 1em;
+  text-align: center;
+}
+
+
+h1{
+  text-align: center;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    fieldset{
+      padding: 0.5em;
+    }
+
+    .contact_section{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    h3{
+      margin: 0;
+      text-align: center;
+    }
+
+    .contact_section > *{
+        width: 100%;
+        padding: 1em;
+    }
+
+    .contact_section > form{
+      display: flex;
+      justify-content: center;
+    }
+
+    .contact_perso {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        padding: 0;
+        padding-left: 0;
+    }
+
+    .contact_perso > div{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+
+    .contact_perso > div > img{
+      width: 4em;
+    }
+
+    .contact_persoV2 {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 1em;
+
+    }
+
+    .contact_persoV2 > h3{
+      width: 100%;  
+      text-align: center;
+    }
+
+    .contact_persoV2 > section{
+      width: 50%;  
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+      padding-top: 1em;
+    }
+
+    
+    .contact_perso > section > p{
+      padding-top: 1em;
+    }
+    
+    .contact_persoV2 > section > p , .contact_persoV2 > section > a {
+      width: 100%;  
+    }
+
+    .contact_persoV2 > div{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      padding: 1em;
+    }
+
+    .contact_persoV2 > div > img{
+      width: 4em;
+    }
+
+
+}
 </style>
