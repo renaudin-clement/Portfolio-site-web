@@ -111,4 +111,51 @@ image{
     width: 100%;
     text-align: justify;
 }
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+
+    .conteneur_projet {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .projet {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: beige;
+        justify-content: center;
+        align-items: center;
+        margin: 1em;
+        width: 100%;
+    }
+
+
+
+    
+
+}
 </style>
