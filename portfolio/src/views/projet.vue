@@ -1,38 +1,9 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>test</title>
-    <link href="/statics/navbarre.css" rel="stylesheet">
-    <link href="/statics/projetetp.css" rel="stylesheet">
-    <link href="/statics/footer.css" rel="stylesheet">
-    <link href="/statics/style.css" rel="stylesheet">
-    <link href="/statics/responsive.css" rel="stylesheet">
     
-    <title>portfoliov2</title>
-  </head>
-  <body>
-    
-    <script type="module" src="/src/main.js"></script>
+<script setup>
 
-    <nav class="navbar">
-          <div class="logo">renaudinclement.fr</div>
-          <ul class="nav-links">
-              <li><a href="../../index.html">Accueil</a></li>
-              <li><a href="/templates/projet.html">Projet</a></li>
-              <li><a href="/templates/portfolio.html">Portfolio</a></li>
-              <li><a href="/templates/contact.html">Contact</a></li>
-          </ul>
-          <div class="hamburger">
-              <span></span>
-              <span></span>
-              <span></span>
-          </div>
-    </nav>
+</script>
 
-
-      <main>
+<template>
         <h1>Projets</h1>
 
          <section>
@@ -103,35 +74,12 @@
 
         
 
-      </main>
-
-      <footer>
-        <ul class="footer_section_ul">
-            <li><a href="/index.html">Accueil</a></li>
-            <li><a href="/templates/projet.html">Projet</a></li>
-            <li><a href="/templates/portfolio.html">Portfolio</a></li>
-            <li><a href="/templates/contact.html">Contact</a></li>
-        </ul>
-        
-        <section class="footer_section2">
-
-          <p>&copy; 2025 renaudin-clement.</p>
-          
-          <ul class="footer_section_ul_link">
-            <li>
-              <a  href="https://www.linkedin.com/in/renaudin-clement/" >
-                  <img src="/img/linkedin.svg" alt="linkedin" height="32" width="32">
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/renaudin-clement">
-                <img src="/img/github-mark-white.svg" alt="github"  height="32" width="32">
-              </a>
-            </li>
-          </ul>
-        </section>
-      </footer>
 
 
-  </body>
-</html>
+</template>
+
+
+
+<style scoped>
+
+</style>
