@@ -29,6 +29,10 @@ const toggleMenu = () => {
 </template>
 
 <style scoped >
+nav{
+    z-index: 100;
+    position: relative;
+}
 
 .router-link-active{
     text-decoration : none;

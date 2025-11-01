@@ -8,11 +8,7 @@
 
          <section>
           <p>
-            Proinde die funestis interrogationibus praestituto imaginarius iudex equitum resedit 
-             magister adhibitis aliis iam quae essent agenda praedoctis, et adsistebant hinc inde
-             notarii, quid quaesitum esset, quidve responsum, cursim ad Caesarem perferentes, cuius
-             imperio truci, stimulis reginae exsertantis aurem subinde per aulaeum, nec diluere obiecta
-            permissi nec defensi periere conplures.
+           Toujours en quête d’apprentissage et d’innovation, je consacre une partie de mon temps à développer des projets personnels. Du web au logiciel, en passant par la 3D, ces réalisations reflètent ma curiosité, ma passion et ma volonté d’explorer sans limite le monde du numérique.
           </p>
 
         </section>
@@ -21,24 +17,21 @@
 
           <section class="projet">
             <a  id="haut" class="projet" href="#Projet1">    
-              <h2>Projet 1</h2>
+              <h2>Site web 3D</h2>
                   <img src="/img/github-mark.svg" alt="github"  height="50" width="50">
               <p>
-                Proinde die funestis interrogationibus praestituto imaginarius iudex equitum resedit 
-                Proinde die funestis interrogationibus praestituto imaginarius iudex equitum resedit 
-                Proinde die funestis interrogationibus praestituto imaginarius iudex equitum resedit 
+                Site web utilisant threes js et blender qui sera la version V2 du portfolio
               </p>
             </a> 
           </section>
 
         <section class="projet">
             <a class="projet" href="#Projet2"> 
-              <h2>Projet 2</h2> 
+              <h2>Karlas</h2> 
                 <img src="/img/github-mark.svg" alt="github"  height="50" width="50">
               <p>
-                Proinde die funestis interrogationibus praestituto imaginarius iudex equitum resedit 
-                Proinde die funestis interrogationibus praestituto imaginarius iudex equitum resedit 
-                Proinde die funestis interrogationibus praestituto imaginarius iudex equitum resedit 
+                Application mobile creer avec flutter l'objectif et de voir plusieur fonctionnaliter de flutter
+                tout en creant une implication simple permettant denregistrer des images
               </p>
             </a>
           </section>
@@ -48,22 +41,21 @@
               <h2>Escarmouche <br> Mur-Tale</h2>
                 <img src="/img/github-mark.svg" alt="github"  height="50" width="50">
               <p>
-                Proinde die funestis interrogationibus praestituto imaginarius iudex equitum resedit 
-                Proinde die funestis interrogationibus praestituto imaginarius iudex equitum resedit 
-                Proinde die funestis interrogationibus praestituto imaginarius iudex equitum resedit 
+                Jeu de stratégie au tour par tour 2D peut etre 3D ou l'objectif est de battre l'adversaire  
+                problème avant d'attaquer votre adversaire vous devez determiner ou il se trouve  
               </p>
             </a>
           </section>
         </section>
        
         <section id="Projet1">
-          <h2>Projet 1</h2>
+          <h2>Site web 3D</h2>
         </section>
 
         
 
         <section id="Projet2">
-          <h2>Projet 2</h2> 
+          <h2>Karlas</h2> 
         </section>
 
         <section id="Projet3">
@@ -95,6 +87,7 @@
     justify-content: center;
     align-items: center;
     margin:1em;
+    
 }
 
 h2{

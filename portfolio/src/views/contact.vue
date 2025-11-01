@@ -98,6 +98,7 @@
 <style scoped>
 p {
   margin: 0px;
+  text-align: center;
 }
  
 
