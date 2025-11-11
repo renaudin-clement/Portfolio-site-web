@@ -15,28 +15,28 @@
 
         <section class="conteneur_projet">
 
-          <section class="projet">
+          <RouterLink to="/projet/3d" class="projet">
             <a  id="haut" class="projet" href="#Projet1">    
               <h2>Site web 3D</h2>
-                  <img src="/img/rob.png" alt="github"  style="width: 65%; "  >
+                  <img src="/img/rob.png" alt="projet 3d"  style="width: 65%; "  >
               <p>
                 Site web utilisant threes js et blender qui sera la version V2 du portfolio
               </p>
             </a> 
-          </section>
+          </RouterLink>
 
-        <section class="projet">
+         <RouterLink to="/projet/karla" class="projet">
             <a class="projet" href="#Projet2"> 
               <h2>Karlas</h2> 
-                <img src="/img/test.png" alt="github"  style="width: 65%; height: 65%;">
+                <img src="/img/test.png" alt="app mobile"  style="width: 65%; height: 65%;">
               <p>
                 Application mobile creer avec flutter l'objectif et de voir plusieur fonctionnaliter de flutter
                 tout en creant une implication simple permettant denregistrer des images
               </p>
             </a>
-          </section>
+          </RouterLink>
 
-        <section class="projet">
+          <RouterLink to="/projet/Mur-Tale" class="projet">
             <a class="projet" href="#Projet3"> 
               <h2>Escarmouche <br> Mur-Tale</h2>
                 <img src="/img/github-mark.svg" alt="github"  height="50" width="50">
@@ -45,7 +45,7 @@
                 problème avant d'attaquer votre adversaire vous devez determiner ou il se trouve  
               </p>
             </a>
-          </section>
+          </RouterLink>
         </section>
        
         <section id="Projet1">
@@ -90,6 +90,11 @@
     align-items: center;
     margin:1em;
     
+}
+
+.router-link-active{
+    text-decoration : none;
+    color:white;
 }
 
 h2{

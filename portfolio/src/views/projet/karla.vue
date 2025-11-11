@@ -15,6 +15,23 @@
             
           </p>
 
+
+          <ul style="display: flex;">
+            <li><img src="/img/projet/tel/photo_09.png"    alt="" width="80%"></li>
+            <li><img src="/img/projet/tel/photo_09(1).png" alt="" width="80%"></li>
+            <li><img src="/img/projet/tel/photo_11.png"    alt="" width="80%"></li>
+            <li><img src="/img/projet/tel/photo_16.png"    alt="" width="80%"></li>
+            <li><img src="/img/projet/tel/photo_20.png"    alt="" width="80%"></li>
+            <li><img src="/img/projet/tel/photo_20(1).png" alt="" width="80%"></li>
+            <li><img src="/img/projet/tel/photo_31.png"    alt="" width="80%"></li>
+            <li><img src="/img/projet/tel/photo_31(1).png" alt="" width="80%"></li>
+            <li><img src="/img/projet/tel/photo_33.png"    alt="" width="80%"></li>
+            <li><img src="/img/projet/tel/photo_46.png"    alt="" width="80%"></li>
+            <li><img src="/img/projet/tel/photo_46(1).png" alt="" width="80%"></li>
+            <li><img src="/img/projet/tel/photo_55.png"    alt="" width="80%"></li>
+            <li><img src="/img/projet/tel/photo_55(1).png" alt="" width="80%"></li>
+          </ul>
+
         </section>
 
         <section class="conteneur_projet">

@@ -4,7 +4,7 @@
 </script>
 
 <template>
-        <h1>Escarmouche</h1>
+        <h1>Escarmouche Mur-Tale</h1>
 
          <section>
           <p>

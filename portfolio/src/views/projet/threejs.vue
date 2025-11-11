@@ -15,6 +15,14 @@
             
           </p>
 
+          <ul style="display: flex;">
+            <li><img src="/img/projet/portfolio 3d/photo.png" alt=""  width="25%"></li>
+            <li><img src="/img/projet/portfolio 3d/photo1.png" alt="" width="25%"></li>
+            <li><img src="/img/projet/portfolio 3d/photo2.png" alt="" width="25%"></li>
+            <li><img src="/img/projet/portfolio 3d/photo3.png" alt="" width="25%"></li>
+          </ul>
+
+
         </section>
 
         <section class="conteneur_projet">
