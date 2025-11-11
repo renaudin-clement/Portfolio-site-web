@@ -18,7 +18,7 @@
           <section class="projet">
             <a  id="haut" class="projet" href="#Projet1">    
               <h2>Site web 3D</h2>
-                  <img src="/img/github-mark.svg" alt="github"  height="50" width="50">
+                  <img src="/img/rob.png" alt="github"  style="width: 65%; "  >
               <p>
                 Site web utilisant threes js et blender qui sera la version V2 du portfolio
               </p>
@@ -28,7 +28,7 @@
         <section class="projet">
             <a class="projet" href="#Projet2"> 
               <h2>Karlas</h2> 
-                <img src="/img/github-mark.svg" alt="github"  height="50" width="50">
+                <img src="/img/test.png" alt="github"  style="width: 65%; height: 65%;">
               <p>
                 Application mobile creer avec flutter l'objectif et de voir plusieur fonctionnaliter de flutter
                 tout en creant une implication simple permettant denregistrer des images
@@ -50,19 +50,21 @@
        
         <section id="Projet1">
           <h2>Site web 3D</h2>
+          <RouterLink to="/projet/3d">details</RouterLink>
         </section>
 
         
 
         <section id="Projet2">
           <h2>Karlas</h2> 
+           <RouterLink to="/projet/karla">details</RouterLink>
         </section>
 
         <section id="Projet3">
           <h2>Escarmouche <br> Mur-Tale</h2>
-
-          <a href="#haut">haut de page</a>
+              <RouterLink to="/projet/Mur-Tale">details</RouterLink>
         </section>
+        <a href="#haut">haut de page</a>
 
         
 

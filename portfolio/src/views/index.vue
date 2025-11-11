@@ -26,6 +26,22 @@
         Proinde die funestis interrogationibus praestituto imaginarius iudex equitum resedit 
         Proinde die funestis interrogationibus praestituto imaginarius iudex equitum resedit 
       </p>
+
+      <section>
+        <div>
+          <img src="" alt="">
+        </div>        
+        
+        <div>
+          <img src="" alt="">
+        </div>        
+        
+        <div>
+          <img src="" alt="">
+        </div>
+
+      </section>
+
   </section>
 
   <section class="part2 sec">
