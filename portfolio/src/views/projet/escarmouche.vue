@@ -17,6 +17,12 @@
 
         </section>
 
+
+        <ul style="display: flex;">
+          <li><img src="/img/logo/C_Logo.png"    alt="" width="20%"></li>
+          <li><img src="/img/logo/sdl.png"    alt="" width="20%"></li>
+        </ul>
+
         <section class="conteneur_projet">
           <section class="projet">
             <a class="projet" href="#Compétence"> 

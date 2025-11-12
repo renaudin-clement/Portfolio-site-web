@@ -32,6 +32,11 @@
             <li><img src="/img/projet/tel/photo_55(1).png" alt="" width="80%"></li>
           </ul>
 
+          <ul style="display: flex;">
+            <li><img src="/img/logo/flutter-logo.png"    alt="" width="20%"></li>
+            <li><img src="/img/logo/SQLite370.png"    alt="" width="20%"></li>
+          </ul>
+
         </section>
 
         <section class="conteneur_projet">

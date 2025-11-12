@@ -22,6 +22,14 @@
             <li><img src="/img/projet/portfolio 3d/photo3.png" alt="" width="25%"></li>
           </ul>
 
+          <ul style="display: flex;">
+            <li><img src="/img/logo/JavaScript-logo.png"    alt="" width="20%"></li>
+            <li><img src="/img/logo/HTML5_logo_and_wordmark.svg"    alt="" width="20%"></li>
+            <li><img src="/img/logo/CSS3_logo_and_wordmark.svg"    alt="" width="20%"></li>
+            <li><img src="/img/logo/ThreeJS.png"    alt="" width="20%"></li>
+            <li><img src="/img/logo/Logo-Vuejs.png"    alt="" width="20%"></li>
+            <li><img src="/img/logo/Blender-Symbol.png"    alt="" width="20%"></li>
+          </ul>
 
         </section>
 

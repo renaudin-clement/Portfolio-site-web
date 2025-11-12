@@ -15,6 +15,7 @@ const toggleMenu = () => {
            <RouterLink to="/"><div class="logo">renaudinclement.fr</div></RouterLink>
             <ul class="nav-links" :class="{ active: isActive }">
                 <RouterLink to="/"><li>          Accueil               </li></RouterLink>
+                
                 <RouterLink to="/projet"><li>    Projet      </li></RouterLink>    
                 <RouterLink to="/portfolio"><li> Portfolio    </li></RouterLink>
                 <RouterLink to="/contat"><li>    Contact   </li></RouterLink>
