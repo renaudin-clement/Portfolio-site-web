@@ -18,10 +18,7 @@
         </section>
 
 
-        <ul style="display: flex;">
-          <li><img src="/img/logo/C_Logo.png"    alt="" width="20%"></li>
-          <li><img src="/img/logo/sdl.png"    alt="" width="20%"></li>
-        </ul>
+
 
         <section class="conteneur_projet">
           <section class="projet">
@@ -58,17 +55,22 @@
        
 
         <section id="Compétence">
-          <h2>Compétence</h2>
+          <h2>technologies utilisées</h2>
+
+          <ul style="display: flex;">
+            <li><img src="/img/logo/C_Logo.png"    alt="" width="20%"></li>
+            <li><img src="/img/logo/sdl.png"    alt="" width="20%"></li>
+          </ul>
         </section>
 
         <section id="Projet">
-          <h2>Projets Réalisés</h2> 
+          <h2>État du projet</h2> 
+
+         
         </section>
 
         <section id="Exemple">
-          <h2>Exemple</h2>
-          three.js 
-          paques chasse au oeuf
+          <h2>Derniere avancement</h2>
         </section>
 
 
@@ -99,10 +101,7 @@ h2{
     text-align: center;
 }
 
-image{
-    width: 100%;
-    text-align: center;
-}
+
 
 .projet > p{
     width: 100%;

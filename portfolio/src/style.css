@@ -83,3 +83,93 @@ a{
 }
 
 
+
+
+
+
+
+
+/* carrouselle*/
+
+.container {
+    overflow: hidden;
+
+}
+
+.carousel {
+    position: relative;
+}
+
+.carousel-inner {
+    display: flex;
+    overflow: hidden;
+    height: 90vh;
+    flex-wrap: nowrap;
+}
+
+
+.slide {
+    flex: 0 0 100%;
+    height: 100%;
+    transition: .5s ease-in-out;
+}
+
+
+
+.slide div {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    display: flex;
+    justify-content: center;
+}
+
+.slide div img {
+    height: 100%;
+}
+
+
+.carousel-controls {
+    position: absolute;
+    z-index: 5;
+    left: 10%;
+    right: 10%;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.carousel-controls button {
+    padding: 10px;
+    background-color: aquamarine;
+}
+
+.carousel-dots {
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    right: 50%;
+    bottom: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.carousel-dots .dot {
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+}
+
+
+
+.carousel-dots .active {
+    border: 10px solid #761530 !important;
+}
+.carousel-dots .inactive {
+    border: 10px solid #2596be;
+}
+
+

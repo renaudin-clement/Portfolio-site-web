@@ -14,10 +14,14 @@ const toggleMenu = () => {
     <nav class="navbar">
            <RouterLink to="/"><div class="logo">renaudinclement.fr</div></RouterLink>
             <ul class="nav-links" :class="{ active: isActive }">
-                <RouterLink to="/"><li>          Accueil               </li></RouterLink>
-                
-                <RouterLink to="/projet"><li>    Projet      </li></RouterLink>    
-                <RouterLink to="/portfolio"><li> Portfolio    </li></RouterLink>
+                <RouterLink to="/">         <li>   Accueil     </li> </RouterLink>
+                <RouterLink to="/projet">   <li>    Projet     </li> </RouterLink>    
+                <ul>
+                    <RouterLink to="/projet/karla">       <li>Karla      </li> </RouterLink>   
+                    <RouterLink to="/projet/3d">          <li>portfolio3d</li>       </RouterLink>  
+                    <RouterLink to="/projet/Mur-Tale">    <li>Mur-Tale   </li>    </RouterLink>    
+                </ul>
+                <RouterLink to="/portfolio"><li> Portfolio     </li> </RouterLink>
                 <RouterLink to="/contat"><li>    Contact   </li></RouterLink>
             </ul>
           <div class="hamburger" @click="toggleMenu">

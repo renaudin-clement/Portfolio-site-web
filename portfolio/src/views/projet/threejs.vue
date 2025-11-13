@@ -22,14 +22,7 @@
             <li><img src="/img/projet/portfolio 3d/photo3.png" alt="" width="25%"></li>
           </ul>
 
-          <ul style="display: flex;">
-            <li><img src="/img/logo/JavaScript-logo.png"    alt="" width="20%"></li>
-            <li><img src="/img/logo/HTML5_logo_and_wordmark.svg"    alt="" width="20%"></li>
-            <li><img src="/img/logo/CSS3_logo_and_wordmark.svg"    alt="" width="20%"></li>
-            <li><img src="/img/logo/ThreeJS.png"    alt="" width="20%"></li>
-            <li><img src="/img/logo/Logo-Vuejs.png"    alt="" width="20%"></li>
-            <li><img src="/img/logo/Blender-Symbol.png"    alt="" width="20%"></li>
-          </ul>
+
 
         </section>
 
@@ -68,17 +61,57 @@
        
 
         <section id="Compétence">
-          <h2>Compétence</h2>
+          <h2>technologies utilisées</h2>
+          <ul style="display: flex;">
+            <li><img src="/img/logo/JavaScript-logo.png"    alt="" width="20%"></li>
+            <li><img src="/img/logo/HTML5_logo_and_wordmark.svg"    alt="" width="20%"></li>
+            <li><img src="/img/logo/CSS3_logo_and_wordmark.svg"    alt="" width="20%"></li>
+            <li><img src="/img/logo/ThreeJS.png"    alt="" width="20%"></li>
+            <li><img src="/img/logo/Logo-Vuejs.png"    alt="" width="20%"></li>
+            <li><img src="/img/logo/Blender-Symbol.png"    alt="" width="20%"></li>
+          </ul>
         </section>
 
         <section id="Projet">
-          <h2>Projets Réalisés</h2> 
+          <h2>État du projet</h2> 
+ 
+
+
+
+          <div class="container">
+              <div class="carousel">
+                  <div class="carousel-inner">
+                      <div class="slide">
+                        <div>
+                          <img src="/img/projet/portfolio 3d/photo3.png"
+                              alt="Image 1">
+                        </div>
+                      </div>
+                      <div class="slide">
+                          <img src="/img/projet/portfolio 3d/photo1.png"
+                              alt="Image 2">
+                      </div>
+                      <div class="slide">
+                          <img src="/img/projet/portfolio 3d/photo2.png"
+                              alt="Image 3">
+                      </div>
+                      <div class="slide">
+                          <img src="/img/projet/portfolio 3d/photo.png"
+                              alt="Image 4">
+                      </div>
+                  </div>
+                  <div class="carousel-controls">
+                      <button id="prev">Précédent</button>
+                      <button id="next">Suivant</button>
+                  </div>
+                  <div class="carousel-dots"></div>
+              </div>
+          </div>
+
         </section>
 
         <section id="Exemple">
-          <h2>Exemple</h2>
-          three.js 
-          paques chasse au oeuf
+          <h2>Derniere avancement</h2>
         </section>
 
 
@@ -158,8 +191,29 @@ image{
         width: 100%;
     }
 
+    .carousel-inner {
+      display: flex;
+      overflow: hidden;
+      height: 25vh;
+      flex-wrap: nowrap;
+    }
 
 
+    .carousel-controls {
+      position: absolute;
+      z-index: 5;
+      left: 10%;
+      right: 10%;
+      top: 106%;
+      display: flex;
+      justify-content: space-between;
+    }
+    
+
+    .container {
+      overflow: hidden;
+      height: 35vh;
+    }
     
 
 }
