@@ -1,6 +1,6 @@
     
 <script setup>
-
+import ChartExample from "../../components/chattest.vue"
 </script>
 
 <template>
@@ -100,10 +100,14 @@
               </div>
           </div>
 
+          
+
         </section>
 
         <section id="Exemple">
           <h2>Derniere avancement</h2>
+
+          <ChartExample></ChartExample>
         </section>
 
 

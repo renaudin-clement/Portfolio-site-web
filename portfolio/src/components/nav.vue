@@ -16,7 +16,7 @@ const toggleMenu = () => {
             <ul class="nav-links" :class="{ active: isActive }">
                 <RouterLink to="/">         <li>   Accueil     </li> </RouterLink>
                 <RouterLink to="/projet">   <li>    Projet     </li> </RouterLink>    
-                <ul>
+                <ul class="nav-links">
                     <RouterLink to="/projet/karla">       <li>Karla      </li> </RouterLink>   
                     <RouterLink to="/projet/3d">          <li>portfolio3d</li>       </RouterLink>  
                     <RouterLink to="/projet/Mur-Tale">    <li>Mur-Tale   </li>    </RouterLink>    
@@ -60,9 +60,10 @@ nav{
     display: flex;
     gap: 1em;
     margin: 0;
+    padding: 0;
 }
 
-.nav-links a {
+.nav-links a ,.nav-links ul li a {
     text-decoration: none;
     color: white;
     transition: color 0.3s;
@@ -71,6 +72,7 @@ nav{
 .nav-links a:hover {
     color: #00bcd4;
 }
+
 
 .hamburger {
     display: none;

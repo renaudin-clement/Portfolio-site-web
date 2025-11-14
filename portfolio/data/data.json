@@ -58,53 +58,84 @@
 
     "projet":[{
 
-        "karla":{
-            
-            "nom":"karla",
-            "langages":[
-                {"nom":"Java", "icon":"public/img/Java_Logo.svg.png"},
-                {"nom":"JavaScript", "icon":"public/img/JavaScript-logo.png"},
-                {"nom":"PHP", "icon":"public/img/new-php-logo.png"}
-            ],
-            
-            "source":[
-                "/img/projet/tel/photo_09.png",
-                "/img/projet/tel/photo_09(1).png",
-                "/img/projet/tel/photo_11.png"   ,
-                "/img/projet/tel/photo_16.png"   ,
-                "/img/projet/tel/photo_20.png"   ,
-                "/img/projet/tel/photo_20(1).png",
-                "/img/projet/tel/photo_31.png"   ,
-                "/img/projet/tel/photo_31(1).png",
-                "/img/projet/tel/photo_33.png"   ,
-                "/img/projet/tel/photo_46.png"   ,
-                "/img/projet/tel/photo_46(1).png",
-                "/img/projet/tel/photo_55.png"   ,
-                "/img/projet/tel/photo_55(1).png"
-            ]
-        },
-        "portfolio3d":{
-            "nom":"portfolio3d",
-            "langages":[
-                {"nom":"Java",       "icon":"public/img/Java_Logo.svg.png"},
-                {"nom":"JavaScript", "icon":"public/img/JavaScript-logo.png"},
-                {"nom":"PHP",        "icon":"public/img/new-php-logo.png"}
-            ],
+        "Personnel": [{
 
-            "source":[
-                "/img/projet/portfolio 3d/photo.png" ,
-                "/img/projet/portfolio 3d/photo1.png",
-                "/img/projet/portfolio 3d/photo2.png",
-                "/img/projet/portfolio 3d/photo3.png"
-            ]
-        }
+                "karla":{
+                    "nom":"karla",
+                    "techno":[
+                        {"nom":"Flutter", "icon":"/img/logo/flutter-logo.png"  },
+                        {"nom":"SQLite3", "icon":"/img/logo/SQLite370.png"     }
+                    ],
+                    "images_projet":[
+                        "/img/projet/tel/photo_09.png",
+                        "/img/projet/tel/photo_09(1).png",
+                        "/img/projet/tel/photo_11.png"   ,
+                        "/img/projet/tel/photo_16.png"   ,
+                        "/img/projet/tel/photo_20.png"   ,
+                        "/img/projet/tel/photo_20(1).png",
+                        "/img/projet/tel/photo_31.png"   ,
+                        "/img/projet/tel/photo_31(1).png",
+                        "/img/projet/tel/photo_33.png"   ,
+                        "/img/projet/tel/photo_46.png"   ,
+                        "/img/projet/tel/photo_46(1).png",
+                        "/img/projet/tel/photo_55.png"   ,
+                        "/img/projet/tel/photo_55(1).png"
+                    ]
+                },
 
-}
+                "portfolio3d":{
+                    "nom":"portfolio3d",
+                    "techno":[
+                        {"nom":"JavaScript", "icon":"/img/logo/JavaScript-logo.png"          },
+                        {"nom":"HTML5",      "icon":"/img/logo/HTML5_logo_and_wordmark.png"  },
+                        {"nom":"CSS3",       "icon":"/img/logo/CSS3_logo_and_wordmark.png"   },
+                        {"nom":"ThreeJS",    "icon":"/img/logo/ThreeJS.png"                  },
+                        {"nom":"Vuejs",      "icon":"/img/logo/Logo-Vuejs.png"               },
+                        {"nom":"Blender",    "icon":"/img/logo/Blender-Symbol.png"           }
+                    ],
+
+                    "images_projet":[
+                        "/img/projet/portfolio 3d/photo.png" ,
+                        "/img/projet/portfolio 3d/photo1.png",
+                        "/img/projet/portfolio 3d/photo2.png",
+                        "/img/projet/portfolio 3d/photo3.png"
+                    ]
+                },
+
+                "mur-tal":{
+                    "nom":"escarmouche mur-tal",
+                    "techno":[
+                        {"nom":"C",        "icon":"/img/logo/C_Logo.png"          },
+                        {"nom":"SDL",      "icon":"/img/logo/sdl.png"             }
+                    ],
+
+                    "images_projet":[]
+                }
+    }],
+    
+    "Universite":
+            [{
+                "mur-tal":{
+                    "nom":"escarmouche mur-tal",
+                    "techno":[
+                        {"nom":"C",        "icon":"/img/logo/C_Logo.png"          },
+                        {"nom":"SDL",      "icon":"/img/logo/sdl.png"             }
+                    ],
+
+                    "images_projet":[]
+                }
+
+
+                
+            }]
+
+}],
 
 
 
-    ],
-    "imagesuniv":[{
+
+
+"images_univ":[{
 
     }]
 
