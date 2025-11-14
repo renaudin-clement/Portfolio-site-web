@@ -62,22 +62,20 @@
 
         <section id="Compétence">
           <h2>technologies utilisées</h2>
-          <ul style="display: flex;">
-            <li><img src="/img/logo/JavaScript-logo.png"    alt="" width="20%"></li>
-            <li><img src="/img/logo/HTML5_logo_and_wordmark.svg"    alt="" width="20%"></li>
-            <li><img src="/img/logo/CSS3_logo_and_wordmark.svg"    alt="" width="20%"></li>
-            <li><img src="/img/logo/ThreeJS.png"    alt="" width="20%"></li>
-            <li><img src="/img/logo/Logo-Vuejs.png"    alt="" width="20%"></li>
-            <li><img src="/img/logo/Blender-Symbol.png"    alt="" width="20%"></li>
-          </ul>
+          <section class="compete">
+              <ul style="display: flex;">
+                <li><img src="/img/logo/JavaScript-logo.png"    alt=""></li>
+                <li><img src="/img/logo/HTML5_logo_and_wordmark.png"    alt=""></li>
+                <li><img src="/img/logo/CSS3_logo_and_wordmark.png"    alt=""></li>
+                <li><img src="/img/logo/ThreeJS.png"    alt=""></li>
+                <li><img src="/img/logo/Logo-Vuejs.png"    alt="" style="width: 15em;"></li>
+                <li><img src="/img/logo/Blender-Symbol.png"    alt="" style="width: 13em;"></li>
+              </ul>
+          </section>
         </section>
 
         <section id="Projet">
           <h2>État du projet</h2> 
- 
-
-
-
           <div class="container">
               <div class="carousel">
                   <div class="carousel-inner">
@@ -142,10 +140,7 @@ h2{
     text-align: center;
 }
 
-image{
-    width: 100%;
-    text-align: center;
-}
+
 
 .projet > p{
     width: 100%;
@@ -214,6 +209,13 @@ image{
       overflow: hidden;
       height: 35vh;
     }
+
+
+    .compete ul{
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+    }
     
 
 }
@@ -221,6 +223,26 @@ image{
 .router-link-active{
     text-decoration : none;
     color:white;
+}
+
+.compete{
+  width: 100%;
+}
+
+li img{
+  width: 8em;
+  padding: 1em;
+}
+
+
+li{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+ul{
+    justify-content: center;
 }
 
 </style>

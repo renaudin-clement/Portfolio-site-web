@@ -56,11 +56,12 @@
 
         <section id="Compétence">
           <h2>technologies utilisées</h2>
-
-          <ul style="display: flex;">
-            <li><img src="/img/logo/C_Logo.png"    alt="" width="20%"></li>
-            <li><img src="/img/logo/sdl.png"    alt="" width="20%"></li>
-          </ul>
+          <section class="compete">
+              <ul style="display: flex;">
+                <li><img src="/img/logo/C_Logo.png"    alt="" width="20%"></li>
+                <li><img src="/img/logo/sdl.png"    alt="" width="20%"></li>
+              </ul>
+          </section>
         </section>
 
         <section id="Projet">
@@ -148,10 +149,43 @@ h2{
     }
 
 
+    li img{
+      width: 6em;
+      padding: 0.5em;
+    }
 
+    .compete ul{
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+    }
     
 
 }
+
+.compete{
+  width: 100%;
+}
+
+li img{
+  width: 22em;
+  padding: 1em;
+
+}
+
+
+li{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+
+ul{
+    justify-content: center;
+}
+
+
 
 .router-link-active{
     text-decoration : none;

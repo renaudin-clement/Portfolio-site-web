@@ -73,11 +73,12 @@
 
         <section id="Compétence">
           <h2>technologies utilisées</h2>
-
-          <ul style="display: flex;">
-            <li><img src="/img/logo/flutter-logo.png"    alt="" width="20%"></li>
-            <li><img src="/img/logo/SQLite370.png"    alt="" width="20%"></li>
-          </ul>
+          <section class="compete">
+              <ul style="display: flex;">
+                <li><img src="/img/logo/flutter-logo.png"    alt="" width="20%"></li>
+                <li><img src="/img/logo/SQLite370.png"    alt="" width="20%"></li>
+              </ul>
+          </section>
         </section>
 
         <section id="Projet">
@@ -162,6 +163,34 @@ image{
 }
 
 
+.router-link-active{
+    text-decoration : none;
+    color:white;
+}
+
+
+
+.compete{
+  width: 100%;
+}
+
+li img{
+  width: 22em;
+  padding: 1em;
+
+}
+
+
+li{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+
+ul{
+    justify-content: center;
+}
 
 
 @media (max-width: 768px) {
@@ -225,22 +254,20 @@ image{
       overflow: hidden;
       height: 35vh;
     }
+
+
+
+    li img{
+      width: 6em;
+      padding: 0.5em;
+    }
     
-
+    .compete ul{
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+    }
 }
-
-.router-link-active{
-    text-decoration : none;
-    color:white;
-}
-
-
-
-
-
-
-
-
 
 
 
