@@ -15,15 +15,6 @@
             
           </p>
 
-          <ul style="display: flex;">
-            <li><img src="/img/projet/portfolio 3d/photo.png" alt=""  width="25%"></li>
-            <li><img src="/img/projet/portfolio 3d/photo1.png" alt="" width="25%"></li>
-            <li><img src="/img/projet/portfolio 3d/photo2.png" alt="" width="25%"></li>
-            <li><img src="/img/projet/portfolio 3d/photo3.png" alt="" width="25%"></li>
-          </ul>
-
-
-
         </section>
 
         <section class="conteneur_projet">
@@ -65,7 +56,7 @@
           <section class="compete">
               <ul style="display: flex;">
                 <li><img src="/img/logo/JavaScript-logo.png"    alt=""></li>
-                <li><img src="/img/logo/HTML5_logo_and_wordmark.png"    alt=""></li>
+                <li><img src="/img/logo/HTML5_logo_and_wordmark.png" style="width: 11em;"   alt=""></li>
                 <li><img src="/img/logo/CSS3_logo_and_wordmark.png"    alt=""></li>
                 <li><img src="/img/logo/ThreeJS.png"    alt=""></li>
                 <li><img src="/img/logo/Logo-Vuejs.png"    alt="" style="width: 15em;"></li>
