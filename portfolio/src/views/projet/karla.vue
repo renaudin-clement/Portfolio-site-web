@@ -273,8 +273,7 @@ ul{
     }
 
 
-
-        .carousel-inner {
+    .carousel-inner {
       display: flex;
       overflow: hidden;
       height: 25vh;
@@ -296,8 +295,26 @@ ul{
     .container {
       overflow: hidden;
       height: 75vh;
+      flex-wrap: wrap;
     }
 
+    .carousel {
+        position: relative;
+        height: 50%;
+        width: 100%;
+        padding: 1em;
+    }
+
+    .compete ul{
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+    }
+    
+
+    .carousel-controls {
+        top: 74%;
+    }
 
 
     li img{
