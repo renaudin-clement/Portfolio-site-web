@@ -1,6 +1,52 @@
     
 <script setup>
 import ChartExample from "../../components/chattest.vue"
+
+
+import { ref, onMounted, onBeforeUnmount } from "vue";
+
+const slideTimeout = 2000;
+
+const slides = ref([
+  { src: "/img/projet/portfolio 3d/photo3.png",    alt: "Image 1" },
+  { src: "/img/projet/portfolio 3d/photo1.png", alt: "Image 2" },
+  { src: "/img/projet/portfolio 3d/photo2.png",    alt: "Image 3" },
+  { src: "/img/projet/portfolio 3d/photo.png",    alt: "Image 4" },
+]);
+
+
+const currentSlide = ref(0);
+let intervalId = null;
+
+// Navigation
+const goTo = (index) => {
+  if (index < 0) index = slides.value.length - 1;
+  if (index >= slides.value.length) index = 0;
+  currentSlide.value = index;
+};
+
+const nextSlide = () => goTo(currentSlide.value + 1);
+const prevSlide = () => goTo(currentSlide.value - 1);
+
+// Auto défilement
+const startAuto = () => {
+  intervalId = setInterval(nextSlide, slideTimeout);
+};
+const pauseAuto = () => clearInterval(intervalId);
+const resumeAuto = () => startAuto();
+
+// Swipe
+let startX = 0;
+const touchStart = (e) => (startX = e.touches[0].clientX);
+const touchEnd = (e) => {
+  let endX = e.changedTouches[0].clientX;
+  if (startX > endX) nextSlide();
+  else if (startX < endX) prevSlide();
+};
+
+onMounted(() => startAuto());
+onBeforeUnmount(() => clearInterval(intervalId));
+
 </script>
 
 <template>
@@ -68,33 +114,47 @@ import ChartExample from "../../components/chattest.vue"
         <section id="Projet">
           <h2>État du projet</h2> 
           <div class="container">
-              <div class="carousel">
-                  <div class="carousel-inner">
-                      <div class="slide">
-                        <div>
-                          <img src="/img/projet/portfolio 3d/photo3.png"
-                              alt="Image 1">
-                        </div>
-                      </div>
-                      <div class="slide">
-                          <img src="/img/projet/portfolio 3d/photo1.png"
-                              alt="Image 2">
-                      </div>
-                      <div class="slide">
-                          <img src="/img/projet/portfolio 3d/photo2.png"
-                              alt="Image 3">
-                      </div>
-                      <div class="slide">
-                          <img src="/img/projet/portfolio 3d/photo.png"
-                              alt="Image 4">
-                      </div>
+            <div class="carousel">
+
+                <!-- SLIDES -->
+                <div class="carousel-inner">
+                  <div
+                    v-for="(slide, i) in slides"
+                    :key="i"
+                    class="slide"
+                    :style="{ transform: `translateX(-${currentSlide * 100}%)` }"
+                    @mouseover="pauseAuto"
+                    @mouseout="resumeAuto"
+                    @touchstart="touchStart"
+                    @touchend="touchEnd"
+                  >
+                    <img class="imgs" :src="slide.src" :alt="slide.alt" />
                   </div>
-                  <div class="carousel-controls">
-                      <button id="prev">Précédent</button>
-                      <button id="next">Suivant</button>
+                </div>
+
+                <div class="carousel-controls">
+                  <button @click="prevSlide">Précédent</button>
+                  <div class="carousel-dots">
+                    <span v-for="(dot, i) in slides"
+                        :key="i"
+                        class="dot"
+                        :class="{ active: currentSlide === i, inactive: currentSlide !== i }"
+                        @click="goTo(i)"
+                      >
+                    </span>
                   </div>
-                  <div class="carousel-dots"></div>
-              </div>
+
+                  <button @click="nextSlide">Suivant</button>
+                </div>
+
+
+
+            </div>
+
+            <div class="carousel">
+               <ChartExample></ChartExample>
+            </div>
+
           </div>
 
         </section>
@@ -200,9 +260,16 @@ h2{
 
     .container {
       overflow: hidden;
-      height: 35vh;
+      height: 75vh;
+      flex-wrap: wrap;
     }
 
+    .carousel {
+        position: relative;
+        height: 50%;
+        width: 100%;
+        padding: 1em;
+    }
 
     .compete ul{
       flex-wrap: wrap;
@@ -210,6 +277,10 @@ h2{
       padding: 0;
     }
     
+
+    .carousel-controls {
+        top: 74%;
+    }
 
 }
 
@@ -236,6 +307,11 @@ li{
 
 ul{
     justify-content: center;
+}
+
+.imgs{
+  width: 100%;
+  height: 100%;
 }
 
 </style>
