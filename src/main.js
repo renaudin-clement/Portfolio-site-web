@@ -20,6 +20,8 @@ camera.position.z = 10;
 camera.position.y = 3.6;
 cube.position.y =7;
 
+let tourn = true;
+
 const loader = new GLTFLoader();
 
 loader.load( '/models/sceneV2.gltf', function ( gltf ) {
@@ -34,10 +36,22 @@ loader.load( '/models/sceneV2.gltf', function ( gltf ) {
 
 function animate() {
   renderer.render( scene, camera );
-  scene.rotation.y -= 0.01;
+  if(tourn){
+    tourner();
+  }
 
-  cube.rotation.x += 0.01;
-  cube.rotation.y += 0.01;
 }
+
+async function tourner() {
+    console.log("Start");
+    scene.rotation.y -= 0.01;
+    cube.rotation.x += 0.01;
+    cube.rotation.y += 0.01;
+    await new Promise(resolve => setTimeout(resolve, 10000));
+    tourn=false;
+    console.log("End");
+}
+
+
 renderer.setAnimationLoop( animate );
 
