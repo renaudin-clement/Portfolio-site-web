@@ -46,6 +46,20 @@ loader.load( '/models/sceneV2.gltf', function ( gltf ) {
 } );
 
 
+function resizeRendererToDisplaySize(renderer) {
+            const canvas = renderer.domElement;
+            var width = window.innerWidth;
+            var height = window.innerHeight;
+            var canvasPixelWidth = canvas.width / window.devicePixelRatio;
+            var canvasPixelHeight = canvas.height / window.devicePixelRatio;
+const needResize = canvasPixelWidth !== width || canvasPixelHeight !== height;
+            if (needResize) {
+renderer.setSize(width, height, false);
+            }
+            return needResize;
+}
+
+
 var controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
 controls.dampingFactor = 0.1;
@@ -54,6 +68,12 @@ controls.dampingFactor = 0.1;
 function animate() {
   controls.update();
   renderer.render(scene, camera);
+
+  if (resizeRendererToDisplaySize(renderer)) {
+                const canvas = renderer.domElement;
+                camera.aspect = canvas.clientWidth / canvas.clientHeight;
+                camera.updateProjectionMatrix();
+  }
 
   cube.rotation.x += 0.01;
   cube.rotation.y += 0.01;

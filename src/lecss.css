@@ -27,6 +27,12 @@ header {
   color: white;
 }
 
+
+header > h1{
+  width: 100%;
+  font-size: 80%;
+}
+
 footer {
   flex-shrink: 0;
   height: 10%;
