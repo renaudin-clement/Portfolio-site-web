@@ -25,8 +25,10 @@ const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
 const cube = new THREE.Mesh( geometry, material );
 scene.add( cube );
 
-camera.position.z = 10;
-camera.position.y = 3.6;
+
+
+camera.position.z = 12;
+camera.position.y = 4.0;
 cube.position.y =7;
 
 let tourn = true;
