@@ -5,10 +5,19 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+var canvas = document.querySelector('#c');
 
-const renderer = new THREE.WebGLRenderer();
-renderer.setSize( window.innerWidth, window.innerHeight );
-document.body.appendChild( renderer.domElement );
+var renderer = new THREE.WebGLRenderer({
+  canvas, antialias: true
+ });
+
+renderer.setSize(canvas.clientWidth, canvas.clientHeight, false);
+
+const stl = renderer.domElement.style;
+stl.top = "0px";
+stl.left = "0px";
+
+
 
 
 const geometry = new THREE.BoxGeometry( 1, 1, 1 );
@@ -34,8 +43,19 @@ loader.load( '/models/sceneV2.gltf', function ( gltf ) {
 
 } );
 
+
+var controls = new OrbitControls(camera, renderer.domElement);
+controls.enableDamping = true;
+controls.dampingFactor = 0.1;
+
+
 function animate() {
-  renderer.render( scene, camera );
+  controls.update();
+  renderer.render(scene, camera);
+
+  cube.rotation.x += 0.01;
+  cube.rotation.y += 0.01;
+
   if(tourn){
     tourner();
   }
@@ -45,8 +65,6 @@ function animate() {
 async function tourner() {
     console.log("Start");
     scene.rotation.y -= 0.01;
-    cube.rotation.x += 0.01;
-    cube.rotation.y += 0.01;
     await new Promise(resolve => setTimeout(resolve, 10000));
     tourn=false;
     console.log("End");
